@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Sandisile Mvandaba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrapper">
+      <div class="brand">Sandisile<span>Mvandaba</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-title">
+        <h1>About Me</h1>
+        <p>Getting to know the person behind the profile</p>
+      </div>
+
+      <div class="grid grid-2">
+
+        <div class="card">
+          <img src="https://picsum.photos/seed/aboutme/500/400" alt="Photo of Your Name" style="border-radius:12px; margin-bottom:16px;">
+          <h2>Who Am I?</h2>
+          <p>
+            My name is <strong>Sandisile Sandy Mvandaba</strong>, and I am currently studying towards a
+            qualification in Application Development at iYunivesithi Walter Sisulu. I'm
+            curious by nature, enjoy solving problems, and I'm always looking for ways to
+            grow — whether that's through coding, reading, or trying new experiences.
+          </p>
+
+          <button class="toggle-btn" id="toggleBioBtn">Read More About Me ▼</button>
+          <div class="hidden-content" id="bioExtra">
+            <p>
+              Outside of my studies, I enjoy spending time with family, exploring new music,
+              and working on small personal coding projects. I believe consistency and
+              curiosity are the two most important ingredients for growth, and I try to bring
+              both into everything I do — including building this very website!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Personal Information</h2>
+          <table>
+            <caption>A quick overview</caption>
+            <tr><th>Full Name</th><td>Sandisile Mvandaba</td></tr>
+            <tr><th>Hometown</th><td>Nqamakwe, Eastern Cape</td></tr>
+            <tr><th>Programme of Study</th><td>Advanced Diploma in Applications Development</td></tr>
+            <tr><th>Institution</th><td>iYunivesithi Walter Sisulu</td></tr>
+            <tr><th>Career Goal</th><td>To become a skilled software / web developer</td></tr>
+            <tr><th>Languages</th><td>English, isiXhosa</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="grid grid-3" style="margin-top:6px;">
+        <div class="card">
+          <h3>🎯 My Goals</h3>
+          <ul style="padding-left:18px; list-style: disc; margin-top:8px;">
+            <li>Graduate with distinction</li>
+            <li>Build real-world software projects</li>
+            <li>Secure an internship in tech</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>💡 My Values</h3>
+          <ul style="padding-left:18px; list-style: disc; margin-top:8px;">
+            <li>Honesty and hard work</li>
+            <li>Continuous learning</li>
+            <li>Helping others when I can</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🌱 Currently Learning</h3>
+          <ul style="padding-left:18px; list-style: disc; margin-top:8px;">
+            <li>HTML, CSS &amp; JavaScript</li>
+            <li>Responsive web design</li>
+            <li>Version control with Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sandisile Sandy Mvandaba. Built with HTML, CSS &amp; JavaScript for APT47P2 Assignment 1.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
