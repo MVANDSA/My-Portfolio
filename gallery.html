@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Sandisile Mvandaba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrapper">
+      <div class="brand">Sandisile<span>Mvandaba</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-title">
+        <h1>Gallery</h1>
+        <p>A few moments and memories, captured</p>
+      </div>
+
+      <div class="slideshow">
+        <img src="https://picsum.photos/seed/slide1/700/400" class="active" alt="Gallery photo 1">
+        <img src="https://picsum.photos/seed/slide2/700/400" alt="Gallery photo 2">
+        <img src="https://picsum.photos/seed/slide3/700/400" alt="Gallery photo 3">
+        <div class="slide-caption">Swipe through some of my favourite memories ✨</div>
+        <button class="slide-btn slide-prev" aria-label="Previous slide">&#10094;</button>
+        <button class="slide-btn slide-next" aria-label="Next slide">&#10095;</button>
+      </div>
+      <div class="slide-dots" id="slideDots"></div>
+
+      <div class="page-title">
+        <h2>Photo Grid</h2>
+        <p>Click any photo to view it larger</p>
+      </div>
+
+      <div class="grid grid-4 gallery-grid">
+        <img src="https://picsum.photos/seed/g1/300/300" alt="Photo 1">
+        <img src="https://picsum.photos/seed/g2/300/300" alt="Photo 2">
+        <img src="https://picsum.photos/seed/g3/300/300" alt="Photo 3">
+        <img src="https://picsum.photos/seed/g4/300/300" alt="Photo 4">
+        <img src="https://picsum.photos/seed/g5/300/300" alt="Photo 5">
+        <img src="https://picsum.photos/seed/g6/300/300" alt="Photo 6">
+        <img src="https://picsum.photos/seed/g7/300/300" alt="Photo 7">
+        <img src="https://picsum.photos/seed/g8/300/300" alt="Photo 8">
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sandisile Mvandaba. Built with HTML, CSS &amp; JavaScript for APT47P2 Assignment 1.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
