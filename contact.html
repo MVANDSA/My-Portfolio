@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sandisile Sandy Mvandaba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrapper">
+      <div class="brand">Sandisile<span>Mvandaba</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-title">
+        <h1>Get In Touch</h1>
+        <p>I'd love to hear from you — send me a message below</p>
+      </div>
+
+      <div class="grid grid-2">
+
+        <div class="card">
+          <h2>Send Me a Message</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name">
+              <span class="error-text" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <span class="error-text" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Enquiry</option>
+                <option value="project">Project Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="error-text" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="toggle-btn" style="width:100%;">Send Message</button>
+            <div id="formStatus"></div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>Contact Details</h2>
+          <table>
+            <tr><th>Email</th><td>mvandabasandisile@gmail.com</td></tr>
+            <tr><th>Phone</th><td>+27 60 726 1781</td></tr>
+            <tr><th>Location</th><td>East London, South Africa</td></tr>
+            <tr><th>University</th><td>iYunivesithi Walter Sisulu</td></tr>
+          </table>
+
+          <h3 style="margin-top:24px;">Find Me Online</h3>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/sandisile-mvandaba-104009211/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/MVANDSA" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.instagram.com/sandy_mvandaba?stkn=MTM2MHk1MGw4MjVkaQ==" target="_blank" rel="noopener">Instagram</a>
+          </div>
+
+          <div class="clock-badge" style="margin-top:24px;">
+            🕒 <span id="digitalClock"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sandisile Mvandaba. Built with HTML, CSS &amp; JavaScript for APT47P2 Assignment 1.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
